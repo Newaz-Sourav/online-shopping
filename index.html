@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="bg-blue-200 h-20 flex items-center mt-4">
+        <p class="text-4xl font-medium text-center w-full sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl">Online Shopping</p>
+    </div>
+
+    <div id="card-display" class="grid grid-cols-1 gap-4 p-8 ml-4 pb-28 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3">
+
+    </div>
+
+    <!-- fotter -->
+    
+    <footer class="bg-fuchsia-400 w-full fixed bottom-0 left-0 right-0 flex flex-row">
+
+        <div class="border-black border-2 w-8/12">
+            <div class="border-b-2 border-black w-full text-center">
+                <h2 class="text-xs font-medium sm:text-xs md:text-lg lg:text-xl xl:text-xl 2xl:text-4xl ">My Card</h2>
+            </div>
+            
+            
+    
+            <div class="flex flex-row gap-6 border-b-2 border-black w-full text-center justify-center p-px">
+
+            <p class="text-xs font-medium sm:text-xs md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl">Total product: <span id="totall-item" >0</span></p>
+
+            <p class="text-xs font-medium sm:text-xs md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl">price: $<span id="price">0</span></p>
+
+            <p class="text-xs font-medium sm:text-xs md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl">Delivery Charge: $<span id="delivery">0</span></p>
+            </div>
+            
+            <hr>
+            <div class="flex flex-row items-center">
+                <p class="w-8/12 text-center text-xs font-medium text-rose-950 sm:text-xs md:text-lg lg:text-xl xl:text-2xl 2xl:text-4xl">Totall Price: $<span id="totall-price">00</span></p>
+
+                <div class="w-4/12 text-center">
+                    <button class="text-center text-xs bg-blue-200 w-8/12 rounded-xl m-px p-px bg-green-300 hover:bg-red-700 sm:text-lg md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl" onclick="orderBtn()">Order Now</button>
+                </div>
+                
+            </div>
+    
+            
+        </div>
+        
+       <div class="flex flex-col items-center border-black border-2 w-4/12">
+        <p class="border-b-2 border-black text-xs font-medium w-full text-center sm:text-sm md:text-sm lg:text-xl xl:text-xl 2xl:text-4xl">Shopping Totall</p>
+        <p class="text-xs font-medium sm:text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-4xl">Your Totall Shopping</p>
+        <p class="text-sm font-medium sm:text-sm md:text-lg lg:text-xl xl:text-xl 2xl:text-4xl">$ <span id="orderCon">00</span></p>
+       </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
